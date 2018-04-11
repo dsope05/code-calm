@@ -5,12 +5,17 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-
+import generateAlgorithmsContainer from '../containers/Algorithms';
+import BreakingBad from './BreakingBad';
 
 const Algorithms = () => {
-  return <div/>
+  return (
+    <div>
+      <BreakingBad/>
+    </div>
+  ) 
 }
 
-
-export default Algorithms
+const AlgorithmsContainer = generateAlgorithmsContainer(Algorithms);
+export default AlgorithmsContainer;
 

@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import algorithms from './reducers/Algorithms';
 
 const names = ['song', 'yoojin', 'maricris', 'betty', 'phillip', 'manik', 'cecil', 'billma', 'manik', 'tri'];
 
@@ -18,7 +19,8 @@ const appState = (state = {
 };
 
 const appReducers = combineReducers({
-  appState,
+  algorithms,
+  appState
 });
 
 export default appReducers;

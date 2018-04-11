@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../assets/logo.svg';
 import '../style/App.css';
 import {
   BrowserRouter as Router,
@@ -8,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Algorithms from './Algorithms';
 import Calendar from './Calendar';
+import Counter from './Counter';
 
 const App = () => {
   return (
@@ -18,6 +18,8 @@ const App = () => {
           <li> <Link className="links" to='/'> Home </Link> </li>
           <li> <Link className="links" to='/about'> About </Link> </li>
           <li> <Link className="links" to='/calendar'> Calendar</Link> </li>
+          <li> <Link className="links" to='/algorithms'> Algorithms</Link> </li>
+          <li> <Link className="links" to='/counter'> Counter</Link> </li>
           <li className="extra"> <Link className="links" to='/extra'> Extra </Link> </li>
         </ul>
       </nav>
@@ -26,6 +28,7 @@ const App = () => {
           <Route exact path="/calendar" component= {Calendar}/>
           <Route exact path="/extra" component= {Extra}/>
           <Route exact path="/algorithms" component= {Algorithms}/>
+          <Route exact path="/counter" component= {Counter}/>
         </div>
     </Router>
   )
@@ -33,6 +36,8 @@ const App = () => {
 
 const Home = () => (
   <div className="maincontainer">
+    This is my home
+    <div> hi HOW ARE YOU </div> 
   </div>
 );
 

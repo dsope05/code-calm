@@ -9,11 +9,12 @@ import './style/index.css';
 
 let store = createStore(appReducers)
 
+window.store = store;
 const Home = generateHomeContainer(App);
 
 ReactDOM.render(
   <Provider store={store}>
-    <Home />
+    <Home/>
   </Provider>,
   document.getElementById('root')
 );

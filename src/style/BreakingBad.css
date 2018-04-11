@@ -1,0 +1,42 @@
+.navcontainer {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0px;
+  background-color: #eceeef;
+  font-family: Arial;
+  border-radius: 10px;
+}
+
+.navcontainer > li {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.links {
+  color: #4682b4;
+}
+
+.navcontainer > .extra {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+@media all and (max-width: 500px) {
+  .navcontainer {
+    flex-wrap: wrap; 
+  }
+
+  .navcontainer > li {
+    flex: 1 1 43%; 
+  }
+  .navcontainer > .extra {
+    margin-left: 15px; 
+    margin-right: 0px;
+  }
+}
+
+.maincontainer {
+  padding: 20px;
+  font-family: Arial;
+}
