@@ -8,6 +8,7 @@ import {
 import Algorithms from './Algorithms';
 import Calendar from './Calendar';
 import Counter from './Counter';
+import Rating from './Rating';
 
 const App = () => {
   return (
@@ -19,16 +20,18 @@ const App = () => {
           <li> <Link className="links" to='/about'> About </Link> </li>
           <li> <Link className="links" to='/calendar'> Calendar</Link> </li>
           <li> <Link className="links" to='/algorithms'> Algorithms</Link> </li>
+          <li> <Link className="links" to='/rating'> Rating </Link> </li>
           <li> <Link className="links" to='/counter'> Counter</Link> </li>
           <li className="extra"> <Link className="links" to='/extra'> Extra </Link> </li>
         </ul>
       </nav>
-          <Route exact path="/" component= {Home}/>
+          <Route exact path="/" component= {Rating}/>
           <Route exact path="/about" component= {About}/>
           <Route exact path="/calendar" component= {Calendar}/>
           <Route exact path="/extra" component= {Extra}/>
           <Route exact path="/algorithms" component= {Algorithms}/>
           <Route exact path="/counter" component= {Counter}/>
+          <Route exact path="/rating" component= {Rating}/>
         </div>
     </Router>
   )
